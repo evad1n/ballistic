@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>BALLISTIC - Documentation</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel=stylesheet type="text/css" href="CSS/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Questrial|Inconsolata|Audiowide" rel="stylesheet">
+	</head>
+
+	<body>
+        <div class="header">
+            <h1>BALLISTIC</h1>
+            <div id="navcontainer">
+                <ul id="navlist">
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="proposal.html">Proposal</a></li>
+                    <li id="active"><a href="documentation.html" id="current">Documentation</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Documentation</h2>
+                <h3>Process</h3>
+                    <p>
+                        We originally planned the game to be very similar to Tank Trouble. We wanted a local multiplayer game that would be action-packed and fun.
+                        Using the template from Circle Blast, we took the design and code for the player and bullets and implemented into our game.
+                        Once we managed to get the players working, we then went about making a randomly generated map with walls.
+                        The map generation is done with a grid system, where walls are placed randomly on the grid.
+                        The collisions were time-consuming to implement as we tried many different methods that didn't work. Eventually we got bullet collision working well, but the tank to wall collision is still buggy.
+                        We decided to only have 2 game states and that it would just keep going back to the main game scene instead of a game over screen.
+                        The music wasn't very cooperative as it wasn't preloading so it took me a while to finally get the right parameters in Howler for it to play at the start.
+                        The bullets changing colors over time is a significant touch to the game. The effect is appealing and easy for the players to understand. It was also very annoying to concatenate a bunch of hex values and strings.
+                    </p>
+                <h3>Work Contribution</h3>
+                    <h4>David Liu</h4>
+                        <ul>
+                            <li>Random wall generation and drawing</li>
+                            <li>Finding sound effects and music</li>
+                            <li>Writing documentation</li>
+                        </ul>
+                    <h4>Will Dickinson</h4>
+                        <ul>
+                            <li>Player controls and tank movement</li>
+                            <li>Bullet shooting ang color ramping</li>
+                            <li>All collisions</li>
+                            <li>Music implementation and music buttons</li>
+                            <li>Pretty much everything else that wasn't included in the Circle Blast template</li>
+                        </ul>
+                <h3>Problems</h3>
+                    <p>Sometimes the tanks spawn encased in walls and they can't get to each other. The only solution we could think of was some sort of pathfinding check. Implementing this would have been difficult and time-consuming though so we decided against it. Instead the player can just shoot themselves to advance to a different level.
+                    </p>
+                    <p>The tank to wall collision can sometimes be a little buggy and you can get stuck on walls temporarily.</p>
+                    <p>There may or may not be an edge case where the tanks spawn outside the map or on top of each other. After trying to fix it, I couldn't reproduce the problem so I will just pretend it is solved.</p>
+                    <p>We originally wanted to do a single player mode too, but that quickly got ditched.</p>
+                    <p>Something we definitely could have done was adding power-ups but we start running short on time and we felt that we had spent enough time working on this project.</p>
+                <h3>Sources</h3>
+                    <ul>
+                        <li><a href="https://www.tanktrouble.com/">Tank Trouble</a></li>
+                        <li>Template - <a href="https://github.com/tonethar/IGME-230-GDD-2017-Fall/blob/master/notes/HW-circle-blast.md">Circle Blast!</a></li>
+                        <li>Background Music - <a href="https://www.bensound.com/royalty-free-music/track/extreme-action">Bensound</a></li>
+                        <li>Button push sound - <a href="http://soundbible.com/1950-Button-Push.html">Sound bible</a></li>
+                    </ul>
+        </div>      
+        <div class="footer">
+            <p>
+                <a href="../../index.html">Home Page</a>
+                <a href="https://github.com/evad1n/">My GitHub</a>
+            </p>
+            <p>&copy; 2017 Will Dickinson</p>
+        </div>     
+	</body>
+</html>

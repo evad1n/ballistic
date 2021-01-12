@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>BALLISTIC - Project</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel=stylesheet type="text/css" href="CSS/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Questrial|Inconsolata|Audiowide" rel="stylesheet">
+        <style>
+            body{
+                cursor: url(images/move.png) 8 8,crosshair;
+            }
+            
+            .game{
+                width: 608px;
+                margin: auto;
+                padding: 0;
+            }
+            
+            .controls{
+                width: 50%;
+                margin: auto;
+                text-align: center;
+            }
+            
+            .controls1{
+                display: inline-block;
+                margin: auto;
+            }
+            
+            .controls2{
+                display: inline-block;
+                width: 50%;
+                margin: auto;
+            }
+	   </style>
+	</head>
+
+	<body>
+        <div class="header">
+            <h1>BALLISTIC</h1>
+            <div id="navcontainer">
+                <ul id="navlist">
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="proposal.html">Proposal</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li id="active"><a href="project.html" id="current">Project</a></li>
+                </ul>
+            </div>
+        </div>       
+        <div class="content">
+            <h2>Project</h2>
+            <div class="game"></div>
+            <div class="controls">
+                <div class="controls1">
+                    <h4>Player 1</h4>
+                        <ul>
+                            <li>M - Shoot</li>
+                            <li>Up arrow - Forward</li>
+                            <li>Left arrow - Rotate left</li>
+                            <li>Down arrow - Backwards</li>
+                            <li>Right arrow - Rotate right</li>
+                        </ul>
+                </div>
+                <div class="controls2">
+                    <h4>Player 2</h4>
+                        <ul>
+                            <li>Q - Shoot</li>
+                            <li>W - Forward</li>
+                            <li>A - Rotate left</li>
+                            <li>S - Backwards</li>
+                            <li>D - Rotate right</li>
+                        </ul>
+                </div>
+            </div>
+        </div>        
+        <div class="footer">
+            <p>
+                <a href="../../index.html">Home Page</a>
+                <a href="https://github.com/evad1n/">My GitHub</a>
+            </p>
+            <p>&copy; 2017 Will Dickinson</p>
+        </div>
+        
+        <!-- External libraries -->
+        <!-- https://github.com/pixijs/pixi.js?utm_source=html5weekly -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.0/pixi.min.js"></script>
+        <!--  https://github.com/goldfire/howler.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+        <!-- My JS files -->
+        <script src="js/utilities.js"></script>
+        <script src="js/classes.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/loader.js"></script>
+	</body>
+</html>
