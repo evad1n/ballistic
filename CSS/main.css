@@ -154,21 +154,13 @@ ul{
     padding: 0 1em 0 1em;
 }
 
-a:link{
-    overflow-wrap: break-word;
-    color: red;
-}
-
-a:visited{
+a{
+    text-decoration: none;
     color: white;
 }
 
 a:hover{
-    color: magenta;
-}
-
-a:active{
-    color: purple;
+    color: red;
 }
 
 @media screen and (max-width: 1000px){
